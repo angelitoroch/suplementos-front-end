@@ -4,6 +4,9 @@ import { NgModule } from "@angular/core";
 /*ngx bootstrap*/
 import { ModalModule } from "ngx-bootstrap/modal";
 
+/*FontAwesome*/
+import { AngularFontAwesomeModule } from "angular-font-awesome";
+
 /*Componentes*/
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
@@ -20,7 +23,12 @@ import { FooterPageComponent } from "./components-app/footer-page/footer-page.co
     HeaderPageComponent,
     FooterPageComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, ModalModule.forRoot()],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    ModalModule.forRoot(),
+    AngularFontAwesomeModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
