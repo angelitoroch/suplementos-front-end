@@ -1,5 +1,6 @@
 .login-form {
   width: auto;
+  background: #2a5371;
 }
 
 .login-form form {
@@ -35,12 +36,6 @@
   min-height: 40px;
   border-radius: 2px;
   transition: all 0.5s;
-}
-
-.login-form .close {
-  position: absolute;
-  top: 15px;
-  right: 15px;
 }
 
 .login-form .btn {

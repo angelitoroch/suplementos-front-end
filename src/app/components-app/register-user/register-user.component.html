@@ -6,18 +6,26 @@
   >
     <div class="avatar">
       <img
-        src="../../../assets/img/logo-golds-gym.jpg"
+        src="../../../assets/img/icon-user.png"
         class="img-thumbnail rounded-circle"
         width="100"
         height="100"
       />
     </div>
-    <h4 class="modal-title">Accede a tu cuenta</h4>
+    <h4 class="modal-title">Registrar usuario</h4>
     <div class="form-group">
       <input
         type="text"
         class="form-control"
-        placeholder="Correo"
+        placeholder="Nombre del usuario"
+        required="required"
+      />
+    </div>
+    <div class="form-group">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Correo electrónico"
         required="required"
       />
     </div>
@@ -29,24 +37,25 @@
         required="required"
       />
     </div>
-    <div class="form-group small clearfix">
-      <label class="checkbox-inline"
-        ><input type="checkbox" /> Recordar mi cuenta</label
-      >
-      <a href="#" class="forgot-link">¿Olvidaste tu contraseña?</a>
+    <div class="form-group">
+      <input
+        type="password"
+        class="form-control"
+        placeholder="Confirmar Contraseña"
+        required="required"
+      />
     </div>
     <input
       type="submit"
       class="btn btn-primary btn-block btn-lg"
-      value="Login"
+      value="Registrar"
     />
-
-    <div class="text-center small m-2">
-      ¿No tiene una cuenta? <a (click)="cambiar()">Registrarse</a>
+    <div class="form-group small clearfix mt-2">
+      <a (click)="cambiar()" class="forgot-link">¿Regresar al login?</a>
     </div>
   </form>
 
   <ng-template #elseBlock>
-    <app-register-user></app-register-user>
+    <app-login></app-login>
   </ng-template>
 </div>

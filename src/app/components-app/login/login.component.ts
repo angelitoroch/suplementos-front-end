@@ -6,7 +6,17 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./login.component.css"]
 })
 export class LoginComponent implements OnInit {
-  constructor() {}
+  bandera: boolean;
+
+  constructor() {
+    this.bandera = true;
+  }
 
   ngOnInit() {}
+
+  cambiar() {
+    console.log(this.bandera);
+    this.bandera = false;
+    console.log(this.bandera);
+  }
 }

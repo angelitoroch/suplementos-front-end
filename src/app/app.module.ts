@@ -19,6 +19,7 @@ import { RopaComponent } from './components-app/ropa/ropa.component';
 import { SuplementosComponent } from './components-app/suplementos/suplementos.component';
 import { PromocionesComponent } from './components-app/promociones/promociones.component';
 import { RemateComponent } from './components-app/remate/remate.component';
+import { RegisterUserComponent } from './components-app/register-user/register-user.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { RemateComponent } from './components-app/remate/remate.component';
     RopaComponent,
     SuplementosComponent,
     PromocionesComponent,
-    RemateComponent
+    RemateComponent,
+    RegisterUserComponent
   ],
   imports: [
     BrowserModule,

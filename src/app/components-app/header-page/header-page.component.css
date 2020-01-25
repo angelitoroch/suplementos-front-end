@@ -10,3 +10,7 @@
 .form-control:focus {
   border-color: #b7bfc7;
 }
+
+.bg-modal {
+  background: #2a5371;
+}
