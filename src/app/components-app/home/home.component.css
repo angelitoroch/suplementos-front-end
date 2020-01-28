@@ -1,0 +1,26 @@
+.edit-row {
+  background: #ffd000;
+  border-radius: 10px;
+}
+
+div {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.contenido {
+  color: black;
+  background: #e6e8e6;
+}
+
+.contenido p {
+  font-family: "Georgia", cursive;
+}
+
+.contenido #principal {
+  font-size: 20px;
+}
+
+.contenido p {
+  font-size: 15px;
+}
