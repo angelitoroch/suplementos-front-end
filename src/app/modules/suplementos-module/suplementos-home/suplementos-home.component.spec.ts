@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RemateComponent } from './remate.component';
+import { SuplementosHomeComponent } from './suplementos-home.component';
 
-describe('RemateComponent', () => {
-  let component: RemateComponent;
-  let fixture: ComponentFixture<RemateComponent>;
+describe('SuplementosHomeComponent', () => {
+  let component: SuplementosHomeComponent;
+  let fixture: ComponentFixture<SuplementosHomeComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ RemateComponent ]
+      declarations: [ SuplementosHomeComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RemateComponent);
+    fixture = TestBed.createComponent(SuplementosHomeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

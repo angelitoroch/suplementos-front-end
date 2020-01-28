@@ -14,12 +14,14 @@ import { HeaderPageComponent } from "./components-app/header-page/header-page.co
 import { HomeComponent } from "./components-app/home/home.component";
 import { NotFoundComponent } from "./components-app/not-found/not-found.component";
 import { FooterPageComponent } from "./components-app/footer-page/footer-page.component";
-import { LoginComponent } from './components-app/login/login.component';
-import { RopaComponent } from './components-app/ropa/ropa.component';
-import { SuplementosComponent } from './components-app/suplementos/suplementos.component';
-import { PromocionesComponent } from './components-app/promociones/promociones.component';
-import { RemateComponent } from './components-app/remate/remate.component';
-import { RegisterUserComponent } from './components-app/register-user/register-user.component';
+import { LoginComponent } from "./components-app/login/login.component";
+import { RegisterUserComponent } from "./components-app/register-user/register-user.component";
+
+/*Modulos*/
+import { RemateModule } from "./modules/remate-module/remate.module";
+import { SuplementosModule } from "./modules/suplementos-module/suplementos.module";
+import { PromocionesModule } from "./modules/promociones-module/promociones.module";
+import { RopaModule } from "./modules/ropa-module/ropa.module";
 
 @NgModule({
   declarations: [
@@ -29,17 +31,17 @@ import { RegisterUserComponent } from './components-app/register-user/register-u
     HeaderPageComponent,
     FooterPageComponent,
     LoginComponent,
-    RopaComponent,
-    SuplementosComponent,
-    PromocionesComponent,
-    RemateComponent,
     RegisterUserComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     ModalModule.forRoot(),
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    RemateModule,
+    SuplementosModule,
+    PromocionesModule,
+    RopaModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
